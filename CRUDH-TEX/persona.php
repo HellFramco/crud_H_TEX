@@ -25,9 +25,9 @@
                             <h1>Ingrese datos</h1>
                                 <form action="insertar.php" method="POST">
 
-                                    <input type="number" class="form-control mb-3" name="cedula" placeholder="cedula">
-                                    <input type="text" class="form-control mb-3" name="nombre" placeholder="nombre">
-                                    <input type="email" class="form-control mb-3" name="correo" placeholder="correo">
+                                    <input type="number" class="form-control mb-3" name="cedula" placeholder="cedula" required>
+                                    <input type="text" class="form-control mb-3" name="nombre" placeholder="nombre" required>
+                                    <input type="email" class="form-control mb-3" name="correo" placeholder="correo" required>
 
                                     <input type="submit" class="btn btn-primary">
                                 </form>
