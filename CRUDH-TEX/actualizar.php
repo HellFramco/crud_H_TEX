@@ -27,8 +27,8 @@ $row=mysqli_fetch_array($query);
                     
                                 <input type="hidden" name="cedula" value="<?php echo $row['cedula']  ?>">
                                 
-                                <input type="text" class="form-control mb-3" name="nombre" placeholder="nombre" value="<?php echo $row['nombre']  ?>">
-                                <input type="text" class="form-control mb-3" name="correo" placeholder="correo" value="<?php echo $row['correo']  ?>">
+                                <input type="text" class="form-control mb-3" name="nombre" placeholder="nombre" value="<?php echo $row['nombre']  ?>" required>
+                                <input type="email" class="form-control mb-3" name="correo" placeholder="correo" value="<?php echo $row['correo']  ?>" required>
                                 
                             <input type="submit" class="btn btn-primary btn-block" value="Actualizar">
                     </form>
